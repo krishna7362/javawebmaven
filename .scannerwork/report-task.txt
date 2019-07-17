@@ -1,6 +1,6 @@
 projectKey=onlinebankingjavaweb
-serverUrl=http://jenkinss:9000/sonar
+serverUrl=http://localhost:9000/sonar
 serverVersion=6.4.0.25310
-dashboardUrl=http://jenkinss:9000/sonar/dashboard/index/onlinebankingjavaweb
+dashboardUrl=http://localhost:9000/sonar/dashboard/index/onlinebankingjavaweb
 ceTaskId=AV2ezM7jqS3ng3Q6bxxO
-ceTaskUrl=http://jenkinss:9000/sonar/api/ce/task?id=AV2ezM7jqS3ng3Q6bxxO
+ceTaskUrl=http://localhost:9000/sonar/api/ce/task?id=AV2ezM7jqS3ng3Q6bxxO
