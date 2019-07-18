@@ -13,7 +13,7 @@ pipeline {
             bat 'mvn clean install'
           }
         }
-        stage('Test') {
+        stage('Junit ') {
           steps {
             bat 'mvn test'
           }
