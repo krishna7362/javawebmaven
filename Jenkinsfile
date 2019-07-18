@@ -7,17 +7,8 @@ pipeline {
       }
     }
     stage('build') {
-      parallel {
-        stage('build') {
-          steps {
-            bat 'mvn clean install'
-          }
-        }
-        stage('Junit ') {
-          steps {
-            bat 'mvn test'
-          }
-        }
+      steps {
+        bat 'mvn clean install'
       }
     }
     stage('junit') {
