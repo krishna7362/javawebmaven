@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git 'https://github.com/krishna7362/javawebmaven.git'
+        git(url: 'https://github.com/krishna7362/javawebmaven.git', branch: 'master')
       }
     }
     stage('build') {
       steps {
-        bat 'mvn install'
+        bat 'mvn clean install'
       }
     }
   }
