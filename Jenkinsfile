@@ -20,5 +20,10 @@ pipeline {
         }
       }
     }
+    stage('junit') {
+      steps {
+        bat 'mvn test'
+      }
+    }
   }
 }
