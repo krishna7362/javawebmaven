@@ -16,5 +16,15 @@ pipeline {
         bat 'mvn sonar:sonar'
       }
     }
+    stage('Test') {
+      steps {
+        bat 'mvn test'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        bat 'xcopy "C:\\Program Files (x86)\\Jenkins\\workspace\\javawebmaven_master\\target\\javawebmaven.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps"'
+      }
+    }
   }
 }
