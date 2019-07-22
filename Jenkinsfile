@@ -6,9 +6,9 @@ pipeline {
         git 'https://github.com/krishna7362/javawebmaven.git'
       }
     }
-    stage('build') {
+    stage('compile') {
       steps {
-        bat 'mvn clean install'
+        bat 'mvn compile'
       }
     }
     stage('junit test') {
@@ -16,9 +16,9 @@ pipeline {
         bat 'mvn test'
       }
     }
-    stage('sonar qube') {
+    stage('build') {
       steps {
-        bat 'mvn sonar:sonar'
+        bat 'mvn package'
       }
     }
     stage('deploy') {
