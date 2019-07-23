@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="16" started-at="2019-07-23T07:34:54Z" finished-at="2019-07-23T07:34:54Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="16" started-at="2019-07-23T07:34:54Z" finished-at="2019-07-23T07:34:54Z">
+      <class name="banking.Snippet">
+        <test-method status="PASS" signature="simplemethod2()[pri:0, instance:banking.Snippet@733037]" name="simplemethod2" duration-ms="16" started-at="2019-07-23T13:04:54Z" finished-at="2019-07-23T13:04:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simplemethod2 -->
+      </class> <!-- banking.Snippet -->
+      <class name="banking.amountval">
+        <test-method status="PASS" signature="simplemethod()[pri:0, instance:banking.amountval@5c84624f]" name="simplemethod" duration-ms="0" started-at="2019-07-23T13:04:54Z" finished-at="2019-07-23T13:04:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simplemethod -->
+      </class> <!-- banking.amountval -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

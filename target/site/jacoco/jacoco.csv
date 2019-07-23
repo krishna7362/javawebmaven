@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+javawebmaven Maven Webapp,g,MyListener,92,0,4,0,25,0,5,0,3,0
+javawebmaven Maven Webapp,g,CreateServlet,75,0,2,0,22,0,3,0,2,0
+javawebmaven Maven Webapp,g,RegisterUser,51,0,0,0,17,0,3,0,3,0
+javawebmaven Maven Webapp,g,verifyLogin1,35,0,0,0,13,0,2,0,2,0
+javawebmaven Maven Webapp,g,GetCon,44,0,0,0,19,0,3,0,3,0

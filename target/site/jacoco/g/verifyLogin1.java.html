@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>verifyLogin1.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">javawebmaven Maven Webapp</a> &gt; <a href="index.source.html" class="el_package">g</a> &gt; <span class="el_source">verifyLogin1.java</span></div><h1>verifyLogin1.java</h1><pre class="source lang-java linenums">package g;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+<span class="nc" id="L6">public class verifyLogin1 {</span>
+
+public static boolean checkLogin(int accountno,String username,String password){
+<span class="nc" id="L9">	boolean status=false;</span>
+<span class="nc" id="L10">	Connection con=GetCon.getCon();</span>
+	try {
+		//PreparedStatement ps=con.prepareStatement(&quot;Select * from MAILCASTINGUSER where EMAILADD = ? and PASSWORD =?&quot;);
+<span class="nc" id="L13">		PreparedStatement ps=con.prepareStatement(&quot;Select * from NEWACCOUNT where accountno=? and username = ? and password =?&quot;);</span>
+<span class="nc" id="L14">		ps.setInt(1,accountno);</span>
+<span class="nc" id="L15">		ps.setString(2,username);</span>
+<span class="nc" id="L16">		ps.setString(3,password);</span>
+		
+<span class="nc" id="L18">		ResultSet rs=ps.executeQuery();</span>
+<span class="nc" id="L19">		status=rs.next();</span>
+		
+<span class="nc" id="L21">	} catch (SQLException e) {</span>
+<span class="nc" id="L22">		e.printStackTrace();</span>
+<span class="nc" id="L23">	}</span>
+<span class="nc" id="L24">	return status;</span>
+}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
