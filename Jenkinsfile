@@ -16,9 +16,9 @@ pipeline {
         bat 'mvn test'
       }
     }
-    stage('build') {
+    stage('SonarQube') {
       steps {
-        bat 'mvn package'
+        bat 'mvn sonar:sonar'
       }
     }
     stage('deploy') {
